@@ -1,0 +1,23 @@
+{
+    "products": [
+        {
+            "name": "Pixel Buds A-Series",
+            "id": "pixel_buds_a_series",
+            "types": [
+                {
+                    "color": "Clearly White", 
+                    "price": 99.00
+                },
+                {
+                    "color": "Dark Olive", 
+                    "price": 99.00
+                }
+            ]
+        },
+        {
+            "name": "Google Pixel Stand (2nd Generation)",
+            "id": "pixel_stand_2nd_gen",
+            "price": 79.00
+        }
+    ]
+}

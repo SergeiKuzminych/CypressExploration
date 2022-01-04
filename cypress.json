@@ -1,0 +1,10 @@
+{
+    "integrationFolder": "cypress/all-tests",
+    "baseUrl": "https://reqres.in",
+    "projectId": "bo8cpm",
+    "env": {
+        "googleURL": "https://store.google.com/us",
+        "exchangeURL": "https://www.xe.com/currencyconverter/"
+    }
+}
+  
