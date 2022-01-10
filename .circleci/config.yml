@@ -12,4 +12,3 @@ workflows:
           parallel: true
           parallelism: 5
           group: 5 machines
-          env: "CYPRESS_RECORD_KEY=dc31c3bc-2297-4d6d-b63c-948af418373b"
