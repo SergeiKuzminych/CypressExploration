@@ -12,8 +12,10 @@ pipeline {
     stages {
         stage('define parameters') {
             steps {
-                video_config = ("$params.video" == "Enabled") ? "--config video=true" :
-                                ("$params.video" == "Disabled") ? "--config video=false" : ""
+                script {
+                    video_config = ("$params.video" == "Enabled") ? "--config video=true" :
+                                   ("$params.video" == "Disabled") ? "--config video=false" : ""
+                }
             }
         }
         stage('build') {
