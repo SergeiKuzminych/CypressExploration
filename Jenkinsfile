@@ -1,7 +1,21 @@
 pipeline {
     agent any
 
+    parameters {
+        choice(
+            name: 'video',
+            choices: ['Enabled', 'Disabled'],
+            description: 'Keep Recording Video to the Cypress Dashboard: '
+        )
+    }
+
     stages {
+        stage('define parameters') {
+            steps {
+                video_config = ("$params.video" == "Enabled") ? "--config video=true" :
+                                ("$params.video" == "Disabled") ? "--config video=false" : ""
+            }
+        }
         stage('build') {
             steps {
                 bat 'npm install'
