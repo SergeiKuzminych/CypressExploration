@@ -4,4 +4,11 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/run
+      - cypress/install
+      - cypress/run:
+          requires:
+            - cypress/install
+          record: true
+          parallel: true
+          parallelism: 5
+          group: 5 machines
