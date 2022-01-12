@@ -14,7 +14,7 @@ describe('UI Tests', () => {
       })
     })
 
-    it('Positive: Product search PO', () => {
+    it('C6 Positive: Product search PO', () => {
       cy.get('@productData').then(productData => {
         AccessoriesPage.open();
         AccessoriesPage.performSearch(productData.name);

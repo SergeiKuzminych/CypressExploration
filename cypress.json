@@ -5,6 +5,14 @@
     "env": {
         "googleURL": "https://store.google.com/us",
         "exchangeURL": "https://www.xe.com/currencyconverter/"
+    },
+    "reporterOptions": {
+        "host": "https://skuzminykh.testrail.com",
+        "username": "siarhei.kuzminykh@itechart-group.com",
+        "password": "xoGIr7uEgYWQlanjpUPH",
+        "projectId": 1,
+        "suiteId": 1,
+        "testRunId": 23
     }
 }
   

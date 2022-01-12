@@ -3,7 +3,7 @@ import {printPlanets, getPlanetsWithDistance, sortPlanetsByRadius ,sortPlanetsBy
 import ExchangePage from "../../page-objects/exchangePage"
 
 describe('Array exploration', () => {
-    it('Task #1: Print an Array', () => {
+    it('C7 Task #1: Print an Array', () => {
         let planets = [
             {planet: "Mercury", radius: 2440, density: 5.43, distance: 0.395},
             {planet: "Venus", radius: 6052, density: 5.24, distance: 0.723},
@@ -19,7 +19,7 @@ describe('Array exploration', () => {
         });
     });
 
-    it('Task #2: Add a property to each element', () => {
+    it('C8 Task #2: Add a property to each element', () => {
         let planets = [
             {planet: "Mercury", radius: 2440, density: 5.43, distance: 0.395},
             {planet: "Venus", radius: 6052, density: 5.24, distance: 0.723},
@@ -39,7 +39,7 @@ describe('Array exploration', () => {
         });
     });
 
-    it('Task #3: Add an element to the end of an Array', () => {
+    it('C9 Task #3: Add an element to the end of an Array', () => {
         let planets = [
             {planet: "Mercury", radius: 2440, density: 5.43, distance: 0.395},
             {planet: "Venus", radius: 6052, density: 5.24, distance: 0.723},
@@ -56,7 +56,7 @@ describe('Array exploration', () => {
         });
     });
 
-    it('Task #4: Use reduce for elements of Array', () => {
+    it('C10 Task #4: Use reduce for elements of Array', () => {
         let planets = [
             {planet: "Mercury", radius: 2440, density: 5.43, distance: 0.395},
             {planet: "Venus", radius: 6052, density: 5.24, distance: 0.723},
@@ -72,7 +72,7 @@ describe('Array exploration', () => {
         }, 0));
     });
 
-    it('Task #5: Filter an Array', () => {
+    it('C11 Task #5: Filter an Array', () => {
         let planets = [
             {planet: "Mercury", radius: 2440, density: 5.43, distance: 0.395},
             {planet: "Venus", radius: 6052, density: 5.24, distance: 0.723},
@@ -86,7 +86,7 @@ describe('Array exploration', () => {
         printPlanets(getPlanetsWithDistance(planets, 5));
     });
 
-    it('Task #6: Delete an element', () => {
+    it('C12 Task #6: Delete an element', () => {
         let planets = [
             {planet: "Mercury", radius: 2440, density: 5.43, distance: 0.395},
             {planet: "Venus", radius: 6052, density: 5.24, distance: 0.723},
@@ -104,7 +104,7 @@ describe('Array exploration', () => {
         });
     });
 
-    it('Task #7: Sort an Array by number', () => {
+    it('C13 Task #7: Sort an Array by number', () => {
         let planets = [
             {planet: "Mercury", radius: 2440, density: 5.43, distance: 0.395},
             {planet: "Venus", radius: 6052, density: 5.24, distance: 0.723},
@@ -121,7 +121,7 @@ describe('Array exploration', () => {
         });
     });
 
-    it('Task #8: Sort an Array by string', () => {
+    it('C14 Task #8: Sort an Array by string', () => {
         let planets = [
             {planet: "Mercury", radius: 2440, density: 5.43, distance: 0.395},
             {planet: "Venus", radius: 6052, density: 5.24, distance: 0.723},
@@ -138,7 +138,7 @@ describe('Array exploration', () => {
         });
     });
 
-    it('Task #9: Print length of an Array', () => {
+    it('C15 Task #9: Print length of an Array', () => {
         let planets = [
             {planet: "Mercury", radius: 2440, density: 5.43, distance: 0.395},
             {planet: "Venus", radius: 6052, density: 5.24, distance: 0.723},
@@ -152,7 +152,7 @@ describe('Array exploration', () => {
         cy.log(planets.length);
     });
 
-    it('Task #10: Currency Exchange', () => {
+    it('C16 Task #10: Currency Exchange', () => {
         cy.fixture('rates').then(currency => {
             ExchangePage.open();
             let toCurrency = chance().pickone(currency.rates);

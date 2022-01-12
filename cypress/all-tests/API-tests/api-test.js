@@ -1,7 +1,7 @@
 import chance from "chance"
 
-describe('API tests', () => {
-    it('Positive: Create user', () => {
+describe('S1 API tests', () => {
+    it('C30 Positive: Create user', () => {
       cy.fixture('user').then(user => {
         cy.request('POST', '/api/users', user).then(response => {
           expect(response.status).to.eq(201)
@@ -29,7 +29,7 @@ describe('API tests', () => {
     ]
 
     testingData.forEach(({description, requestData}) => {
-      it(`Positive: Create user ${description}`, () => {
+      it(`C31 Positive: Create user ${description}`, () => {
         cy.request('POST', '/api/users', requestData).then(response => {
           expect(response.status).to.eq(201)
           expect(response.body).to.have.property('name', requestData.name)
@@ -38,7 +38,7 @@ describe('API tests', () => {
       })
     })
     
-    it('Negative: POST request - login unsuccessful', () => {
+    it('C32 Negative: POST request - login unsuccessful', () => {
       cy.request({method: 'POST', url:'/api/login', failOnStatusCode: false, body: {
         "email":"peter@klaven"
       }}).then(response => {

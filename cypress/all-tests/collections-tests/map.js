@@ -3,7 +3,7 @@ import {printPlanets, getPlanetsWithDistance, sortPlanetsByRadius ,sortPlanetsBy
 import ExchangePage from "../../page-objects/exchangePage"
 
 describe('Map exploration', () => {
-    it('Task #1 & #2: Create a Map and print it', () => {
+    it('C17 Task #1 & #2: Create a Map and print it', () => {
         let planets = new Map();
         planets.set('Mercury', {radius: 2440, density: 5.43, distance: 0.395});
         planets.set('Venus', {radius: 6052, density: 5.24, distance: 0.723});
@@ -18,7 +18,7 @@ describe('Map exploration', () => {
         });          
     });
 
-    it('Task #3: Get and print a key-value pair from a Map', () => {
+    it('C18 Task #3: Get and print a key-value pair from a Map', () => {
         let planets = new Map();
         planets.set('Mercury', {radius: 2440, density: 5.43, distance: 0.395});
         planets.set('Venus', {radius: 6052, density: 5.24, distance: 0.723});
@@ -31,7 +31,7 @@ describe('Map exploration', () => {
         cy.log("Saturn: " + Object.keys(planets.get("Saturn")).map(objKey => objKey + ': ' + planets.get("Saturn")[objKey]).join(', '));
     });
 
-    it('Task #4: Print the size of a Map', () => {
+    it('C19 Task #4: Print the size of a Map', () => {
         let planets = new Map();
         planets.set('Mercury', {radius: 2440, density: 5.43, distance: 0.395});
         planets.set('Venus', {radius: 6052, density: 5.24, distance: 0.723});
@@ -44,7 +44,7 @@ describe('Map exploration', () => {
         cy.log(planets.size);
     });
 
-    it('Task #5: Find an element in a Map', () => {
+    it('C20 Task #5: Find an element in a Map', () => {
         let planets = new Map();
         planets.set('Mercury', {radius: 2440, density: 5.43, distance: 0.395});
         planets.set('Venus', {radius: 6052, density: 5.24, distance: 0.723});
@@ -60,7 +60,7 @@ describe('Map exploration', () => {
         });
     });
 
-    it('Task #6: Delete an element from a Map', () => {
+    it('C21 Task #6: Delete an element from a Map', () => {
         let planets = new Map();
         planets.set('Mercury', {radius: 2440, density: 5.43, distance: 0.395});
         planets.set('Venus', {radius: 6052, density: 5.24, distance: 0.723});
@@ -74,7 +74,7 @@ describe('Map exploration', () => {
         cy.log(planets.size);
     });
 
-    it('Task #7: Merge two Maps', () => {
+    it('C22 Task #7: Merge two Maps', () => {
         let planetsFirst = new Map();
         planetsFirst.set('Mercury', {radius: 2440, density: 5.43, distance: 0.395});
         planetsFirst.set('Venus', {radius: 6052, density: 5.24, distance: 0.723});
@@ -88,7 +88,7 @@ describe('Map exploration', () => {
         cy.log(new Map([...planetsFirst, ...planetsSecond]));
     });
 
-    it('Task #8: Print properties of an Object', () => {
+    it('C23 Task #8: Print properties of an Object', () => {
         let planet = {planet: "Mercury", radius: 2440, density: 5.43, distance: 0.395};
         for (let key in planet) {
             cy.log(`${key}: ${planet[key]}`);

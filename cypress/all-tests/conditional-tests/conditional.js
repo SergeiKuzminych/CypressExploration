@@ -7,7 +7,7 @@ describe('Conditional operators exploration', () => {
         age = chance().age();
     });
 
-    it('Task #1: If usage', () => {
+    it('C1 Task #1: If usage', () => {
         if (age < 13) {
             cy.log(`${age} is child`);
         } else if (age < 20) {
@@ -19,7 +19,7 @@ describe('Conditional operators exploration', () => {
         }
     });
 
-    it('Task #2: Switch usage', () => {
+    it('C2 Task #2: Switch usage', () => {
         switch (age) {
             case 12: 
                 cy.log(`${age} is child`);
@@ -35,7 +35,7 @@ describe('Conditional operators exploration', () => {
         }
     });
 
-    it('Task #3: ? usage', () => {
+    it('C3 Task #3: ? usage', () => {
         (age < 13) ? cy.log(`${age} is child`) : (age < 20) ? cy.log(`${age} is teen`) : (age < 66) ? cy.log(`${age} is adult`) : cy.log(`${age} is senior`);
     });
 });

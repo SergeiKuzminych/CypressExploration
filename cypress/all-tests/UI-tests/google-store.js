@@ -14,7 +14,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
 describe('Google Store Practical Task #1', () => {
   productsData.products.forEach((product) => {
-    it(`Task #1: ${product.name}`, () => {
+    it(`C4 Task #1: ${product.name}`, () => {
       cy.log('GIVEN User is at Accessories page');
       AccessoriesPage.open();
       cy.log('AND User searches for a product');
@@ -78,7 +78,7 @@ describe('Google Store Practical Task #2', () => {
   });
   
 
-  it(`Task #2: ${product.name}`, () => {
+  it(`C5 Task #2: ${product.name}`, () => {
     cy.log('WHEN Cart page is opened');
     CartPage.open();
 
