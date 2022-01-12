@@ -9,7 +9,7 @@ pipeline {
                 'All', 'API-tests/api-test.js', 'API-tests/google-store.js', 
                 'collections-tests/array.js', 'collections-tests/map.js', 'collections-tests/set.js',
                 'conditional-tests/conditional.js',
-                'UI-tests/google-store.js', 'ui-test.js'
+                'UI-tests/google-store.js', 'UI-tests/ui-test.js'
             ],
             description: 'Spec to run'
         )
